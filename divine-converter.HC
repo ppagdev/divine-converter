@@ -1,5 +1,5 @@
 I64 getInput() {
-  return Str2I64(GetStr("Please enter a binary number with up to 8 digits.\n"));
+  return Str2I64(GetStr("Please enter a sacred binary number with up to 8 digits.\n"));
 }
 
 Bool isBinary(I64 num) {
@@ -53,7 +53,10 @@ do {
 bin = getInput;
 } while (!isBinary(bin));
 
-Print("Binary: %d \n", bin);
 
+// print binary number
+Print("Holy Binary: %d \n", bin);
+
+// get decimal equivalent of original number and print it
 dec = bin2dec(bin);
-Print("Decimal: %d \n", dec);
+Print("Holy Decimal: %d \n", dec);
